@@ -7,8 +7,8 @@ Use Node 5, please.
 
 Check `npm run-script` to see what's available. Some commands:
 
-  * `npm serve`: Runs the site in **development** mode.
-  * `npm test:watch`: Runs the tests and listens for them.
+  * `npm run serve`: Runs the site in **development** mode.
+  * `npm run test:watch`: Runs the tests and listens for them.
 
 Don't run the tests. It's a [*hackathon*][4], fam. 
 
