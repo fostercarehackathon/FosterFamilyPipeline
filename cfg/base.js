@@ -2,11 +2,7 @@
 let path = require('path');
 let defaultSettings = require('./defaults');
 
-// Additional npm or bower modules to include in builds
-// Add all foreign plugins you may need into this array
-// @example:
 let npmBase = path.join(__dirname, '../node_modules');
-// let additionalPaths = [ path.join(npmBase, 'react-bootstrap') ];
 let additionalPaths = [
   path.join(npmBase, 'colors.css')
 ];
@@ -41,10 +37,5 @@ module.exports = {
     },
     modulesDirectories: ["web_modules", "node_modules", "bower_components"]
   },
-  plugins: [
-    new webpack.ResolverPlugin (
-      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
-    )
-  ],
   module: {},
 };
