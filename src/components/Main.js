@@ -2,16 +2,23 @@ require('normalize.css/normalize.css');
 require('styles/App.scss');
 
 import React from 'react';
+import OnboarderComponent from './OnboarderComponent';
+import HeaderComponent from './HeaderComponent';
 
-class AppComponent extends React.Component {
+class Main extends React.Component {
   render() {
     return (
-      <Onboarder />
+      <div>
+        <HeaderComponent />
+        <div className="pusher">
+          <OnboarderComponent />
+        </div>
+      </div>
     );
   }
 }
 
-AppComponent.defaultProps = {
+Main.defaultProps = {
 };
 
-export default AppComponent;
+export default Main;

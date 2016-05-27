@@ -4,8 +4,10 @@ let path = require('path');
 let defaultSettings = require('./defaults');
 
 let npmBase = path.join(__dirname, '../node_modules');
+let bowerBase = path.join(__dirname, '../bower_components');
 let additionalPaths = [
-  path.join(npmBase, 'colors.css')
+  path.join(npmBase, 'colors.css'),
+  path.join(bowerBase, 'semantic')
 ];
 
 module.exports = {
@@ -41,7 +43,10 @@ module.exports = {
   plugins: [
       new webpack.ResolverPlugin(
           new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
-      )
+      ),
+      new ProvidePlugin({
+        'jQuery': 'jquery'
+      })
   ],
   module: {},
 };

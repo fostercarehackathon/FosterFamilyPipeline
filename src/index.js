@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from './stores';
 import App from './containers/App';
 
+const Semantic = require('semantic/dist/semantic.js');
 const store = configureStore();
 
 render(
