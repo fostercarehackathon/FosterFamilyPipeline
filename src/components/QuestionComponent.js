@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import AnswerComponent from 'AnswerComponent';
 
 require('styles//Question.css');
 
@@ -8,7 +9,13 @@ class QuestionComponent extends React.Component {
   render() {
     return (
       <div className="question-component">
-        Please edit src/components///QuestionComponent.js to update this component!
+        <h2>{{question}}</h2>
+        {this.props.answers.map(answer => {
+          return (
+            <Answer answer={answer} />
+          )
+        })}
+        </div>
       </div>
     );
   }

@@ -7,7 +7,8 @@ let npmBase = path.join(__dirname, '../node_modules');
 let bowerBase = path.join(__dirname, '../bower_components');
 let additionalPaths = [
   path.join(npmBase, 'colors.css'),
-  path.join(bowerBase, 'semantic')
+  path.join(bowerBase, 'jquery'),
+  path.join(bowerBase, 'semantic'),
 ];
 
 module.exports = {
@@ -42,10 +43,10 @@ module.exports = {
   },
   plugins: [
       new webpack.ResolverPlugin(
-          new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
+          new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
       ),
       new webpack.ProvidePlugin({
-        'jQuery': 'jquery'
+        'jQuery': 'jquery',
       })
   ],
   module: {},
