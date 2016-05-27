@@ -1,0 +1,23 @@
+{
+  "name": "fosterCarePipeline",
+  "description": "Showing people if they can be a foster parent.",
+  "main": "",
+  "authors": [
+    "Team Team <teamteam@mama.we.made.it>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fostercarehackathon/FosterFamilyPipeline",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.1.8",
+    "font-awesome": "^4.6.3",
+    "webfontloader": "^1.6.24"
+  }
+}
