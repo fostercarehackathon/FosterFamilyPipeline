@@ -5,6 +5,21 @@ import React from 'react';
 require('styles//Onboarder.css');
 
 class OnboarderComponent extends React.Component {
+  componentWillMount() {
+/**
+ *          <script type="text/javascript" src="https://clef.io/v3/clef.js"
+                  class="clef-button"
+                  data-app-id="b143071ae5f056957f9e447910c28210"
+                  data-color="blue"
+                  data-style="flat"
+                  data-state="magic_cookie"
+                  data-redirect-url="https://hackfostercarepipeline-web.herokuapp.com/clef/redirect"
+                  data-type="login">
+          </script>
+
+ */
+  }
+
   render() {
     return (
       <div className="onboarder-component ui inverted vertical masthead center aligned segment">
@@ -15,18 +30,17 @@ class OnboarderComponent extends React.Component {
             </a>
             <a className="active item">Home</a>
             <div className="right item">
-              <a className="ui inverted button">Log in</a>
-              <a className="ui inverted button">Sign Up</a>
+              <a href="#" className="ui inverted button">Log in</a>
+              <a href="#" className="ui inverted button">Sign Up</a>
             </div>
           </div>
         </div>
 
         <div className="ui text container">
-          <h1 className="ui inverted header">
-            Imagine-a-Company
-          </h1>
-          <h2>Do whatever you want when you want to.</h2>
-          <div className="ui huge primary button">Get Started <i className="right arrow icon"></i></div>
+          <h1 className="ui inverted header">FoCaPipe</h1>
+          <h2>See if you can be a foster parent <em>today</em>.</h2>
+          <p>
+          </p>
         </div>
       </div>
     );
