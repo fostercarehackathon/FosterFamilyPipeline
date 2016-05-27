@@ -13,9 +13,29 @@ import { connect } from 'react-redux';
 import Main from '../components/Main';
 /* Populated by react-webpack-redux:reducer */
 class App extends Component {
+  getInitialState() {
+    return {
+      route: window.location.hash.substr(1)
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('hashchange', () => {
+      this.setState({
+        route: window.location.hash.substr(1)
+      })
+    })
+  }
+
   render() {
+    let Child
+    switch (this.props.route) {
+      // case '/questionnaire': Child = About; break;
+      default:      Child = Main;
+    }
+
     const {actions} = this.props;
-    return <Main actions={actions}/>;
+    return <Child actions={actions}/>;
   }
 }
 /* Populated by react-webpack-redux:reducer

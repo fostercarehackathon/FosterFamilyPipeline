@@ -4,13 +4,13 @@ import React, {
 } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Question from '../components/question';
+import QuestionComponent from '../components/QuestionComponent';
 
 // FIXME: Inject the reducer 'Question'.
 class Question extends Component {
   render() {
     const {actions} = this.props;
-    return <Question actions={actions} question={null}/>;
+    return <QuestionComponent actions={actions} question={null}/>;
   }
 }
 

@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import AnswerComponent from 'AnswerComponent';
+import AnswerComponent from './AnswerComponent';
 
 require('styles//Question.css');
 
@@ -15,7 +15,6 @@ class QuestionComponent extends React.Component {
             <Answer answer={answer} />
           )
         })}
-        </div>
       </div>
     );
   }
