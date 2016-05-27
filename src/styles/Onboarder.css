@@ -1,0 +1,30 @@
+.onboarder-component {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+
+  p.clef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .clef-button-wrapper {
+      display: inline;
+      margin: 1.5rem 0px;
+    }
+  }
+
+}
+
+i.icon { float: left; }
+
+input[type=text] { text-align: center; }
+
+img.logo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 0.3rem solid #fff;
+}
