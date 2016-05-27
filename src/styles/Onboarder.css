@@ -1,3 +1,7 @@
 .onboarder-component {
   border: 1px dashed #f00;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

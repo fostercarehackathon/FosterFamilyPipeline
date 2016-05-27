@@ -23,24 +23,23 @@ class OnboarderComponent extends React.Component {
   render() {
     return (
       <div className="onboarder-component ui inverted vertical masthead center aligned segment">
-        <div className="ui container">
-          <div className="ui large secondary inverted pointing menu">
-            <a className="toc item">
-              <i className="sidebar icon"></i>
-            </a>
-            <a className="active item">Home</a>
-            <div className="right item">
-              <a href="#" className="ui inverted button">Log in</a>
-              <a href="#" className="ui inverted button">Sign Up</a>
-            </div>
-          </div>
-        </div>
-
         <div className="ui text container">
+          <img src="./assets/logo.png" alt="Logo" />
           <h1 className="ui inverted header">FoCaPipe</h1>
           <h2>See if you can be a foster parent <em>today</em>.</h2>
           <p>
           </p>
+        </div>
+
+        <div className="ui text container">
+          <p>Before we can begin, we need your ZIP code.</p>
+          <div className="ui action input">
+            <input type="number" placeholder="Enter your ZIP code" />
+            <button className="ui button">
+              <i className="icon map" />
+              Begin
+            </button>
+          </div>
         </div>
       </div>
     );
