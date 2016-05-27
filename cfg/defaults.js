@@ -37,7 +37,7 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
+        test: /\.(png|jpg|eot|ttf|gif|woff|woff2)$/,
         loader: 'url-loader?limit=8192'
       },
       {

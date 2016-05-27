@@ -1,4 +1,5 @@
 'use strict';
+let webpack = require('webpack');
 let path = require('path');
 let defaultSettings = require('./defaults');
 
@@ -37,5 +38,10 @@ module.exports = {
     },
     modulesDirectories: ["web_modules", "node_modules", "bower_components"]
   },
+  plugins: [
+      new webpack.ResolverPlugin(
+          new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
+      )
+  ],
   module: {},
 };

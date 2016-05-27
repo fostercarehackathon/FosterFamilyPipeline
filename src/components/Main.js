@@ -6,7 +6,7 @@ import React from 'react';
 class AppComponent extends React.Component {
   render() {
     return (
-      <h2>Foster Care Support</h2>
+      <Onboarder />
     );
   }
 }
