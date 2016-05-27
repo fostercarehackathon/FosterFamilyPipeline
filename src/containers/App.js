@@ -28,14 +28,8 @@ class App extends Component {
   }
 
   render() {
-    let Child
-    switch (this.props.route) {
-      // case '/questionnaire': Child = About; break;
-      default:      Child = Main;
-    }
-
     const {actions} = this.props;
-    return <Child actions={actions}/>;
+    return <Main actions={actions}/>;
   }
 }
 /* Populated by react-webpack-redux:reducer

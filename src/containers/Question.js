@@ -6,9 +6,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import QuestionComponent from '../components/QuestionComponent';
 
-// FIXME: Inject the reducer 'Question'.
 class Question extends Component {
   render() {
+    console.log('goooo');
     const {actions} = this.props;
     return <QuestionComponent actions={actions} question={null}/>;
   }

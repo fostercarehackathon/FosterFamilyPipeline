@@ -14,7 +14,7 @@ render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={OnboarderComponent} />
+        <Route path="/questions/complete/" component={Question} />
         <Route path="/questions/:id" component={Question} />
       </Route>
     </Router>

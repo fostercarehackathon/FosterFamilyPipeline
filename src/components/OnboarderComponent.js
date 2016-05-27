@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import { Router } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 
 require('styles//Onboarder.css');
 
@@ -15,10 +15,7 @@ class OnboarderComponent extends React.Component {
  */
 
   startThis() {
-    console.log(context);
-    Router.push({
-      pathname: "/questions/1"
-    })
+    browserHistory.push('/questions/1');
   }
 
   render() {
@@ -34,7 +31,7 @@ class OnboarderComponent extends React.Component {
           <p>Before we can begin, we need your ZIP code.</p>
           <div className="ui action input">
             <input type="text" placeholder="Enter your ZIP code" />
-            <button className="ui teal button" onClick={this.startThis}>
+            <button className="ui teal button" onClick={this.startThis.bind(this)}>
               <i className="icon map" />
               Begin
             </button>

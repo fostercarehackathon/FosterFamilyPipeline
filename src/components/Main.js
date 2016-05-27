@@ -10,9 +10,7 @@ class Main extends React.Component {
     return (
       <div>
         <HeaderComponent />
-        <div className="pusher">
-          <OnboarderComponent />
-        </div>
+        <OnboarderComponent />
       </div>
     );
   }
