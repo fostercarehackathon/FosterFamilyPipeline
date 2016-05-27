@@ -15,7 +15,7 @@ class OnboarderComponent extends React.Component {
  */
 
   startThis() {
-    browserHistory.push('/questions/1');
+    browserHistory.push("/questions/1");
   }
 
   render() {

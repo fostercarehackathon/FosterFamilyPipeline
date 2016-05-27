@@ -9,7 +9,7 @@ class QuestionComponent extends React.Component {
   render() {
     return (
       <div className="question-component">
-        <h2>{{question}}</h2>
+        <h2>{{this.props.question}}</h2>
         {this.props.answers.map(answer => {
           return (
             <Answer answer={answer} />
