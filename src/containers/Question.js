@@ -66,29 +66,15 @@ const QuestionDb = [
 ];
 
 function getQuestion(index) {
+  return QuestionDb[index];
 }
 
 class Question extends Component {
   render() {
     const question = getQuestion(0);
-    const {actions} = this.props;
-    return <QuestionComponent actions={actions} question={question}/>;
+    console.log(question)
+    return <QuestionComponent question={question}/>;
   }
 }
 
-Question.propTypes = {
-  actions: PropTypes.object.isRequired
-};
-
-function mapStateToProps(state) {
-  const props = {};
-  return props;
-}
-
-function mapDispatchToProps(dispatch) {
-  const actions = {};
-  const actionMap = { actions: bindActionCreators(actions, dispatch) };
-  return actionMap;
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Question);
+export default Question;
